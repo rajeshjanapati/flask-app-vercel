@@ -3,6 +3,7 @@ from sklearn.linear_model import LinearRegression
 from flask import Flask, request, jsonify, render_template
 
 app = Flask(__name__)
+application=app
 
 @app.route('/')
 def index():
@@ -97,9 +98,9 @@ def process_data():
         }
     return jsonify(response_data)
 
-# if __name__ == '__main__':
-#     # app.run(host='0.0.0.0',debug=True,port=8000)  # Run the Flask app
-#     app.run(debug=True)
+if __name__ == '__main__':
+    # app.run(host='0.0.0.0',debug=True,port=8000)  # Run the Flask app
+    app.run(debug=True)
 
 
 
