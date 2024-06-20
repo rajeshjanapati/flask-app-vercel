@@ -16,3 +16,4 @@ tomli==2.0.1
 waitress==3.0.0
 Werkzeug==3.0.3
 zipp==3.19.2
+setuptools
